@@ -1,4 +1,4 @@
-import { PageHolder } from "./PageHolder";
+import { PageHolder } from "./PageHolder.abstract";
 
 export abstract class BasePage extends PageHolder {
 

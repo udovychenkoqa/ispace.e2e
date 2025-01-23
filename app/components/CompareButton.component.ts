@@ -1,6 +1,6 @@
-import { BaseComponent } from "../base/BaseComponent";
-import { Badge } from "./Badge.component";
+import { BaseComponent } from "../base/BaseComponent.abstract";
+import { Counter } from "./Counter.component";
 
 export class CompareButton extends BaseComponent{
-    public badge = new Badge(this.page)
+    public counter = new Counter(this.page)
 }
