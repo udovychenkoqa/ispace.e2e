@@ -7,7 +7,7 @@ export class PasswordForm extends BaseComponent {
 
     //Actions
 
-  @step(`Fill input password fields`)
+    @step(`Fill input password fields`)
     async fillPassword(password: string):Promise<void>{
         await this.inputPassword.fill(password);
     }
