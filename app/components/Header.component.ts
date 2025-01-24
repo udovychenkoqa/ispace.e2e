@@ -4,7 +4,7 @@ import { MatMenu } from "./MatMenu.component";
 import { step } from "../../helpers/step";
 import { expect } from "@playwright/test";
 import { Navigation } from "./Navigation.component";
- 
+
 export class Header extends BaseComponent{
     public search = new SearchForm(this.page);
     public matMenu = new MatMenu(this.page);

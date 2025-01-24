@@ -17,7 +17,7 @@ export default [
             "semi": ["error", "always"],
             // enforces the consistent use of either backticks, double, or single quotes
             "quotes": ["warn", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
-            // enforces line breaks after opening and before closing array brackets        
+            // enforces line breaks after opening and before closing array brackets
             "array-bracket-newline": ["warn", "consistent"],
             // enforces consistent spacing inside array brackets
             "array-bracket-spacing": ["warn", "never"],
@@ -50,10 +50,14 @@ export default [
                 ],
                 "allowSamePrecedence": true
             }],
-            // disallow multiple whitespace around logical expressions, conditional expressions, declarations, 
+            // disallow multiple whitespace around logical expressions, conditional expressions, declarations,
             // array elements, object properties, sequences and function parameters
             "no-multi-spaces": "warn",
-            
+            // disallows trailing whitespace (spaces, tabs, and other Unicode whitespace characters) at the end of lines
+            "no-trailing-spaces": "warn",
+            // disallows whitespace around the dot or before the opening bracket before properties of objects if they
+            // the same line
+            "no-whitespace-before-property": "error",
             "no-unused-vars": "warn",
             "no-undef": "warn"
         }
