@@ -2,7 +2,7 @@ import { BaseComponent } from "../../base/BaseComponent.abstract";
 import { step } from "../../../helpers/step";
 export class LoginForm extends BaseComponent {
     //Locators
-    private  inputLogin = this.page.locator('input[formcontrolname="login"]');
+    private inputLogin = this.page.locator('input[formcontrolname="login"]');
 
 
       @step(`Fill input email field`)

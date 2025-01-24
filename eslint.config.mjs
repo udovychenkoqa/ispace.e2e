@@ -33,6 +33,27 @@ export default [
             "comma-spacing": ["warn", { "before": false, "after": true }],
             // enforce newline consistency in member expressions
             "dot-location": ["warn", "property"],
+            // enforces line breaks between arguments of a function call
+            "function-call-argument-newline": ["warn", "consistent"],
+            // enforces spacing around the colon in object literal properties
+            "key-spacing": ["warn", { "beforeColon": false, "afterColon": true }],
+            // disallows unnecessary semicolons
+            "no-extra-semi": "warn",
+            // number either before or after it
+            "no-floating-decimal": "warn",
+            // checks BinaryExpression, LogicalExpression and ConditionalExpression
+            "no-mixed-operators": ["error", {
+                "groups": [
+                    ["&", "|", "^", "~", "<<", ">>", ">>>"],
+                    ["&&", "||"],
+                    ["in", "instanceof"]
+                ],
+                "allowSamePrecedence": true
+            }],
+            // disallow multiple whitespace around logical expressions, conditional expressions, declarations, 
+            // array elements, object properties, sequences and function parameters
+            "no-multi-spaces": "warn",
+            
             "no-unused-vars": "warn",
             "no-undef": "warn"
         }
