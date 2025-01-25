@@ -19,15 +19,15 @@ export class CatalogItem extends BaseComponent {
         return parseBody[0].id;
     }
 
-    @step("Click Favorite button and get product id")
-    async addProductToAt(data: { number: number }) {
+    @step("Click Cart button and get product id")
+    async addProductToCartAt(data: { number: number }) {
         const responsePromise = this.page.waitForResponse((response) =>
-            response.url().includes("/favorite")
+            response.url().includes("/cart")
         );
-        await this.favoriteButton.nth(data.number - 1).click();
+        await this.cartButton.nth(data.number - 1).click();
         const response = await responsePromise;
         const parseBody = await response.json();
-        return parseBody[0].id;
+        return parseBody.products[0].id;
     }
 
 }

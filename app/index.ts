@@ -7,15 +7,19 @@ import { API } from "../api";
 import { MacbookAirPage } from "./pages/macbook/MacbookAir.page";
 import { MacPage } from "./pages/macbook/Mac.page";
 import { FavoritePage } from "./pages/account/Favorite.page";
+import { CartModal } from "./modals/cart/Cart.modal";
+import { CartPage } from "./pages/cart/Cart.page";
 
 export class App extends PageHolder {
     readonly api = new API(this.page.request);
     readonly homePage = new HomePage(this.page);
     readonly loginModal = new LoginModal(this.page);
+    readonly cartModal = new CartModal(this.page);
     readonly comparePage = new ComparePage(this.page);
     readonly macbookAirPage = new MacbookAirPage(this.page);
     readonly macPage = new MacPage(this.page);
     readonly favoritePage = new FavoritePage(this.page);
+    readonly cartPage = new CartPage(this.page);
 
     //Actions
     @step("Save storage state of user")

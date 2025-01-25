@@ -7,7 +7,7 @@ import tseslint from "typescript-eslint";
 export default [
     {
         files: ["**/*.{js,mjs,cjs,ts}"],
-        ignores: ["**/step.ts", "**/node_modules/**"],
+        ignores: ["**/step.ts", "**/node_modules/**", "/playwright-report/**"],
         rules: {
             // enforces a maximum line length to increase code readability and maintainability
             "max-len": ["warn", { "code": 120, "ignoreUrls": true, "ignoreRegExpLiterals": true }],

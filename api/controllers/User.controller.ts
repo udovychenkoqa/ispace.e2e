@@ -11,8 +11,7 @@ export class UserController extends RequestHolder {
         const response = await this.request.delete(`https://ispace.ua/ua/api/apr/favorites?product_id=${data.id}`, {
             headers: {
                 authorization: `Bearer ${data.authToken}`,
-                // eslint-disable-next-line quotes
-                carttoken: data.cartToken || ''
+                carttoken: data.cartToken || ""
             }
         });
         expect(response.ok()).toBeTruthy();
