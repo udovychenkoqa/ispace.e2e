@@ -31,6 +31,7 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
         baseURL: "https://ispace.ua/ua/",
         actionTimeout: 25 * 1000,
+        colorScheme: "light",
         screenshot: "only-on-failure",
         video: "retain-on-failure",
 
