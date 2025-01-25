@@ -36,7 +36,7 @@ test("Cart page updates after adding a product to cart", async({ app }) => {
     await app.cartPage.expectProductListToHaveCount(1);
 });
 
-test.only("Price changes after clicking a plus button", async({ app }) => {
+test("Price changes after clicking a plus button", async({ app }) => {
     //Actions
     await app.macPage.open();
     await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
