@@ -4,7 +4,7 @@ import { BaseComponent } from "../base/BaseComponent.abstract";
 export class CatalogItem extends BaseComponent {
     //Locators
     private favoriteButton = this.page.locator("button.btn-favorite");
-    private cartButton = this.page.locator(".product-order-buttons button.btn.btn-base");
+    private cartButton = this.page.locator("button.btn.btn-base .ng-star-inserted", {hasText: "В кошик"});
 
 
     //Actions
