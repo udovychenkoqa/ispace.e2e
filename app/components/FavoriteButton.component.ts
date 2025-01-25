@@ -1,6 +1,13 @@
 import { BaseComponent } from "../base/BaseComponent.abstract";
-import { Counter } from "./Counter.component";
+import { expect } from "@playwright/test";
+
 
 export class FavoriteButton extends BaseComponent {
-    public counter = new Counter(this.page);
+    //locators
+    private counter = this.page.locator("nav .btn-header-favorite .count");
+
+    //Assert
+    async expectCounterToHaveText(value: string){
+        expect(this.counter).toHaveText(value);
+    }
 }

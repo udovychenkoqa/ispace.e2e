@@ -1,4 +1,5 @@
 import { test as setup } from "../fixtures/index";
+import { getAuthTokenFromAuthFile, getCartTokenFromAuthFile } from "../helpers/authHelper";
 
 setup("Login to site as user", async ({ app }) => {
     //Action
@@ -15,4 +16,7 @@ setup("Login to site as user", async ({ app }) => {
 
     //Save storage
     await app.saveStorageStateTo("./data/auth/authFile.json");
+    process.env.CART_TOKEN = getCartTokenFromAuthFile();
+    process.env.AUTH_TOKEN = getAuthTokenFromAuthFile();
+
 });

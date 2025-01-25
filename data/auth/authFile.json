@@ -12,40 +12,80 @@
     },
     {
       "name": "_gcl_au",
-      "value": "1.1.1449858004.1737756228",
+      "value": "1.1.389718533.1737824099",
       "domain": ".ispace.ua",
       "path": "/",
-      "expires": 1745532228,
+      "expires": 1745600098,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "deviceUUID",
+      "value": "77debe16-4492-45b0-9ca8-e4022b6512fb",
+      "domain": "api.maestra.io",
+      "path": "/",
+      "expires": 1772384101.389811,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.1308503847.1737824099",
+      "domain": ".ispace.ua",
+      "path": "/",
+      "expires": 1772384099.019952,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_gid",
-      "value": "GA1.2.1234620267.1737756229",
+      "value": "GA1.2.520356191.1737824099",
       "domain": ".ispace.ua",
       "path": "/",
-      "expires": 1737842628,
+      "expires": 1737910499,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga",
-      "value": "GA1.1.774648481.1737756229",
+      "name": "maestraDeviceUUID",
+      "value": "77debe16-4492-45b0-9ca8-e4022b6512fb",
       "domain": ".ispace.ua",
       "path": "/",
-      "expires": 1772316228.608574,
+      "expires": 1772384099.025256,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "directCrm-session",
+      "value": "%7B%22deviceGuid%22%3A%2277debe16-4492-45b0-9ca8-e4022b6512fb%22%7D",
+      "domain": ".ispace.ua",
+      "path": "/",
+      "expires": 1772384099.025373,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mindboxDeviceUUID",
+      "value": "77debe16-4492-45b0-9ca8-e4022b6512fb",
+      "domain": ".ispace.ua",
+      "path": "/",
+      "expires": 1772384099.025463,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_fbp",
-      "value": "fb.1.1737756228642.803675871598273038",
+      "value": "fb.1.1737824099047.446250514791475928",
       "domain": ".ispace.ua",
       "path": "/",
-      "expires": 1745532230,
+      "expires": 1745600100,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -55,147 +95,107 @@
       "value": "1",
       "domain": ".ispace.ua",
       "path": "/",
-      "expires": 1737756288,
+      "expires": 1737824159,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "IDE",
-      "value": "AHWqTUktwYyYInAjIYyDJd0XPyhM5RLR-_eXZtyc1QaT8NFxvHRjVf0G0T1CQz-a",
+      "value": "AHWqTUnWVPoGs42EkdERK70mAkDX-FUgQLO7On3v6k46zjUZvK5-_ihEPTxU8NG1",
       "domain": ".doubleclick.net",
       "path": "/",
-      "expires": 1772316228.718059,
+      "expires": 1772384099.074024,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "li_sugr",
-      "value": "db3f7f57-dd73-4c61-bd4b-9ac6b97c7e25",
+      "value": "e96592f5-1c9d-4da5-9625-62703b8af2db",
       "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1745532229.458785,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "bcookie",
-      "value": "\"v=2&123cc864-5237-4fb7-874d-47aa215c213a\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1769292230.45884,
+      "expires": 1745600099.948699,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "lidc",
-      "value": "\"b=OGST00:s=O:r=O:a=O:p=O:g=3538:u=1:x=1:i=1737756228:t=1737842628:v=2:sig=AQHR4vURKtXoxBDL4CuKFKHLmJ9pb-gi\"",
+      "value": "\"b=OGST00:s=O:r=O:a=O:p=O:g=3538:u=1:x=1:i=1737824099:t=1737910499:v=2:sig=AQG1LckHb6zWYsRkROcIwAMIEsbmbS2v\"",
       "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1737842629.775943,
+      "expires": 1737910499.288611,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "deviceUUID",
-      "value": "52ab7156-62a8-4edb-b76f-0b3d047751aa",
-      "domain": "api.maestra.io",
-      "path": "/",
-      "expires": 1772316231.394201,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "maestraDeviceUUID",
-      "value": "52ab7156-62a8-4edb-b76f-0b3d047751aa",
-      "domain": ".ispace.ua",
-      "path": "/",
-      "expires": 1772316228.841959,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "directCrm-session",
-      "value": "%7B%22deviceGuid%22%3A%2252ab7156-62a8-4edb-b76f-0b3d047751aa%22%7D",
-      "domain": ".ispace.ua",
-      "path": "/",
-      "expires": 1772316228.842061,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "mindboxDeviceUUID",
-      "value": "52ab7156-62a8-4edb-b76f-0b3d047751aa",
-      "domain": ".ispace.ua",
-      "path": "/",
-      "expires": 1772316228.842194,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
     },
     {
       "name": "UserMatchHistory",
-      "value": "AQIrDtNWcU-mrQAAAZSaV70b6lgpmABPFUiZvPVicfqlv3jE7D4LMzYbJtG3kVNuRSl-WqGq89Jqog",
+      "value": "AQLJXrjAlLoSEgAAAZSeY1xkL3LD2BLlAUtWd6hww2v4wzXp5Ii_9D54Bht8nG3TlfWCD101vQ7uEw",
       "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1740348228.98028,
+      "expires": 1740416099.459334,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "AnalyticsSyncHistory",
-      "value": "AQK5HeaNwu2ZsQAAAZSaV70bqBNW6gYfj9YLfSsPBplQWD_jbKINm9pwtFax2rGjyRZUjvAaIEXB7mFuyxg8EQ",
+      "value": "AQIYabQX3AY8igAAAZSeY1xkGOUglKlQBqJ606Kl22fN0sdGJi34z59brAqN62nzZX-XFtjR8NbWcl050itdtA",
       "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1740348228.98029,
+      "expires": 1740416099.459344,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "NID",
-      "value": "521=LkbXDynxbdrRF5L7KIO0CsDvjqmXBJhKsDhzV_998q4MbDdKd1SlA7xHjLzCQxR4sgEU751UVsd0GjIgjYAC-yhSC2TThmXckyuJ5JADk3Q2lTN0wK1QenuaAE5Tqh_tLVMFfeCpMj89zHprKqZL8w6pOgis3apBjvaKBQEm-2TQuNzzwJlez6Edgj-UTewT3aYW",
-      "domain": ".google.com",
+      "name": "bcookie",
+      "value": "\"v=2&c283d316-82da-44bc-8779-523236f105a8\"",
+      "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1753567428.992153,
-      "httpOnly": true,
+      "expires": 1769360099.948741,
+      "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "bscookie",
-      "value": "\"v=1&20250124220349917d55d2-42ac-438d-8526-077b4f831312AQGqGRoqiE15xDQlkX52jsIfoIoKBqaD\"",
+      "value": "\"v=1&2025012516545970a583c0-bf46-4de6-8c04-4629e1b98bf2AQGh4SabTSXHubOGJx3C2xQFFsX-TBod\"",
       "domain": ".www.linkedin.com",
       "path": "/",
-      "expires": 1769292229.245756,
+      "expires": 1769360099.742327,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "__cf_bm",
-      "value": "FGMEXYm1qGJmmSZBlz8Z20Ddr_R9KWyFQLh68NWK5Mo-1737756229-1.0.1.1-oJYNpHEdOO_P5ayfqelbnzxH8StTwnk6g6le4KTUEPwDyO1nDfiGdoNYufAyMyEoFpdDzgjLGbLyW6xFbFoDfQ",
+      "value": "HigSQ3hbzRXyuFTJz.a.1V8GUYHoxMW_ZGwGAR1nORY-1737824099-1.0.1.1-SBK8tKC8QRc6BclKPouWrq5uM2qz7zIPVTDpaB3_jSkvdgLTf33p1zJh2sgF_OMD9j1MhVpgiZA7nkw1VFnREA",
       "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1737758029.245852,
+      "expires": 1737825899.74243,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
+    },
+    {
+      "name": "_ga_VGV83486D5",
+      "value": "GS1.1.1737824098.1.0.1737824100.58.0.145504161",
+      "domain": ".ispace.ua",
+      "path": "/",
+      "expires": 1772384100.169219,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
     },
     {
       "name": "device-source",
       "value": "https://ispace.ua/ua/",
       "domain": ".ispace.ua",
       "path": "/",
-      "expires": 1769292229.554049,
+      "expires": 1769360100.209357,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -205,19 +205,9 @@
       "value": "",
       "domain": ".ispace.ua",
       "path": "/",
-      "expires": 1769292229.554243,
+      "expires": 1769360100.209576,
       "httpOnly": false,
       "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ga_VGV83486D5",
-      "value": "GS1.1.1737756228.1.0.1737756229.59.0.659002283",
-      "domain": ".ispace.ua",
-      "path": "/",
-      "expires": 1772316229.7115,
-      "httpOnly": false,
-      "secure": false,
       "sameSite": "Lax"
     }
   ],
@@ -227,7 +217,7 @@
       "localStorage": [
         {
           "name": "helpcrunch.com-ispaceua-1-last-message",
-          "value": "{\"chat\":\"triggers\",\"agent\":4,\"broadcastId\":9,\"broadcastType\":3,\"broadcastSendingType\":1,\"from\":\"agent\",\"type\":\"message\",\"read\":false,\"sending_status\":{},\"text\":\"MacBook Pro M1 Pro за суперціною 🔥\\nВибір професіоналів, які цінують швидкість та продуктивність.\\n💸 Тільки в iSpace спеціальна ціна на MacBook Pro 16.2\\\" Apple M1 Pro: 75 999 грн замість 135 999 грн!\\nВигода 60 000 грн! 😳😳\\n Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️\\n🌐 Детальніше на сайті iSpace.ua або у магазинах:\\n📍 м. Київ\\n Lavina Mall\\n Retroville\\n Respublika Park\\n River Mall\\n📍 м. Дніпро, пр-т Дмитра Яворницького, 51\\n📍 м. Одеса, вул. Дерибасівська, 27\\n📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)\",\"htmlText\":\"<p>MacBook Pro M1 Pro за суперціною 🔥</p>\\n<p>Вибір професіоналів, які цінують швидкість та продуктивність.<br>&nbsp;<br>💸 Тільки в iSpace спеціальна ціна на <strong>MacBook Pro 16.2\\\" Apple M1 Pro</strong>: <strong>75 999 грн</strong> замість 135 999 грн! <br><strong>Вигода 60 000 грн</strong>! 😳😳</p>\\n<p>&nbsp;Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️</p>\\n<p>🌐 Детальніше на сайті iSpace.ua або у магазинах:<br>📍 м. Київ<br>&nbsp;Lavina Mall<br>&nbsp;Retroville<br>&nbsp;Respublika Park<br>&nbsp;River Mall<br>📍 м. Дніпро, пр-т Дмитра Яворницького, 51<br>📍 м. Одеса, вул. Дерибасівська, 27<br>📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)</p>\",\"createdAt\":\"1737756229.208\"}"
+          "value": "{\"chat\":\"triggers\",\"agent\":4,\"broadcastId\":9,\"broadcastType\":3,\"broadcastSendingType\":1,\"from\":\"agent\",\"type\":\"message\",\"read\":false,\"sending_status\":{},\"text\":\"MacBook Pro M1 Pro за суперціною 🔥\\nВибір професіоналів, які цінують швидкість та продуктивність.\\n💸 Тільки в iSpace спеціальна ціна на MacBook Pro 16.2\\\" Apple M1 Pro: 75 999 грн замість 135 999 грн!\\nВигода 60 000 грн! 😳😳\\n Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️\\n🌐 Детальніше на сайті iSpace.ua або у магазинах:\\n📍 м. Київ\\n Lavina Mall\\n Retroville\\n Respublika Park\\n River Mall\\n📍 м. Дніпро, пр-т Дмитра Яворницького, 51\\n📍 м. Одеса, вул. Дерибасівська, 27\\n📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)\",\"htmlText\":\"<p>MacBook Pro M1 Pro за суперціною 🔥</p>\\n<p>Вибір професіоналів, які цінують швидкість та продуктивність.<br>&nbsp;<br>💸 Тільки в iSpace спеціальна ціна на <strong>MacBook Pro 16.2\\\" Apple M1 Pro</strong>: <strong>75 999 грн</strong> замість 135 999 грн! <br><strong>Вигода 60 000 грн</strong>! 😳😳</p>\\n<p>&nbsp;Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️</p>\\n<p>🌐 Детальніше на сайті iSpace.ua або у магазинах:<br>📍 м. Київ<br>&nbsp;Lavina Mall<br>&nbsp;Retroville<br>&nbsp;Respublika Park<br>&nbsp;River Mall<br>📍 м. Дніпро, пр-т Дмитра Яворницького, 51<br>📍 м. Одеса, вул. Дерибасівська, 27<br>📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)</p>\",\"createdAt\":\"1737824100.209\"}"
         },
         {
           "name": "helpcrunch.com-ispaceua-1-page-views",
@@ -235,7 +225,7 @@
         },
         {
           "name": "helpcrunch.com-ispaceua-1-last-trigger-message",
-          "value": "{\"chat\":\"triggers\",\"agent\":4,\"broadcastId\":9,\"broadcastType\":3,\"broadcastSendingType\":1,\"from\":\"agent\",\"type\":\"message\",\"read\":false,\"sending_status\":{},\"text\":\"MacBook Pro M1 Pro за суперціною 🔥\\nВибір професіоналів, які цінують швидкість та продуктивність.\\n💸 Тільки в iSpace спеціальна ціна на MacBook Pro 16.2\\\" Apple M1 Pro: 75 999 грн замість 135 999 грн!\\nВигода 60 000 грн! 😳😳\\n Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️\\n🌐 Детальніше на сайті iSpace.ua або у магазинах:\\n📍 м. Київ\\n Lavina Mall\\n Retroville\\n Respublika Park\\n River Mall\\n📍 м. Дніпро, пр-т Дмитра Яворницького, 51\\n📍 м. Одеса, вул. Дерибасівська, 27\\n📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)\",\"htmlText\":\"<p>MacBook Pro M1 Pro за суперціною 🔥</p>\\n<p>Вибір професіоналів, які цінують швидкість та продуктивність.<br>&nbsp;<br>💸 Тільки в iSpace спеціальна ціна на <strong>MacBook Pro 16.2\\\" Apple M1 Pro</strong>: <strong>75 999 грн</strong> замість 135 999 грн! <br><strong>Вигода 60 000 грн</strong>! 😳😳</p>\\n<p>&nbsp;Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️</p>\\n<p>🌐 Детальніше на сайті iSpace.ua або у магазинах:<br>📍 м. Київ<br>&nbsp;Lavina Mall<br>&nbsp;Retroville<br>&nbsp;Respublika Park<br>&nbsp;River Mall<br>📍 м. Дніпро, пр-т Дмитра Яворницького, 51<br>📍 м. Одеса, вул. Дерибасівська, 27<br>📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)</p>\",\"createdAt\":\"1737756229.208\"}"
+          "value": "{\"chat\":\"triggers\",\"agent\":4,\"broadcastId\":9,\"broadcastType\":3,\"broadcastSendingType\":1,\"from\":\"agent\",\"type\":\"message\",\"read\":false,\"sending_status\":{},\"text\":\"MacBook Pro M1 Pro за суперціною 🔥\\nВибір професіоналів, які цінують швидкість та продуктивність.\\n💸 Тільки в iSpace спеціальна ціна на MacBook Pro 16.2\\\" Apple M1 Pro: 75 999 грн замість 135 999 грн!\\nВигода 60 000 грн! 😳😳\\n Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️\\n🌐 Детальніше на сайті iSpace.ua або у магазинах:\\n📍 м. Київ\\n Lavina Mall\\n Retroville\\n Respublika Park\\n River Mall\\n📍 м. Дніпро, пр-т Дмитра Яворницького, 51\\n📍 м. Одеса, вул. Дерибасівська, 27\\n📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)\",\"htmlText\":\"<p>MacBook Pro M1 Pro за суперціною 🔥</p>\\n<p>Вибір професіоналів, які цінують швидкість та продуктивність.<br>&nbsp;<br>💸 Тільки в iSpace спеціальна ціна на <strong>MacBook Pro 16.2\\\" Apple M1 Pro</strong>: <strong>75 999 грн</strong> замість 135 999 грн! <br><strong>Вигода 60 000 грн</strong>! 😳😳</p>\\n<p>&nbsp;Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️</p>\\n<p>🌐 Детальніше на сайті iSpace.ua або у магазинах:<br>📍 м. Київ<br>&nbsp;Lavina Mall<br>&nbsp;Retroville<br>&nbsp;Respublika Park<br>&nbsp;River Mall<br>📍 м. Дніпро, пр-т Дмитра Яворницького, 51<br>📍 м. Одеса, вул. Дерибасівська, 27<br>📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)</p>\",\"createdAt\":\"1737824100.209\"}"
         },
         {
           "name": "user_id",
@@ -259,7 +249,7 @@
         },
         {
           "name": "helpcrunch.com-ispaceua-1-last-trigger-time",
-          "value": "1737756229760"
+          "value": "1737824100416"
         },
         {
           "name": "helpcrunch.com-ispaceua-1-visits-count",
@@ -267,7 +257,7 @@
         },
         {
           "name": "compare_token",
-          "value": "87820c4df0b5d4403f6ab0b99f6b00c4"
+          "value": "4149594569fa3c0142b2c7d4a3fe8c8f"
         },
         {
           "name": "helpcrunch.com-ispaceua-1-triggers",
@@ -275,23 +265,23 @@
         },
         {
           "name": "cart_token",
-          "value": "0f38fb4ae354cdaf948b246be33c89d0"
+          "value": "5eab5489ceeac9fa1025723777e4158e"
         },
         {
           "name": "lastExternalReferrerTime",
-          "value": "1737756228637"
+          "value": "1737824099042"
         },
         {
           "name": "maestraDeviceUUID",
-          "value": "52ab7156-62a8-4edb-b76f-0b3d047751aa"
+          "value": "77debe16-4492-45b0-9ca8-e4022b6512fb"
         },
         {
           "name": "mindboxDeviceUUID",
-          "value": "52ab7156-62a8-4edb-b76f-0b3d047751aa"
+          "value": "77debe16-4492-45b0-9ca8-e4022b6512fb"
         },
         {
           "name": "auth_token",
-          "value": "18097b1bc0b1bea8bc73a81db2e7b94a"
+          "value": "954737ab460ad97cbaa907dff16d3201"
         },
         {
           "name": "lastExternalReferrer",
@@ -303,19 +293,19 @@
         },
         {
           "name": "hc-visitor-hash",
-          "value": "\"e6cf76e5ed798a17b55c5bac9d7de7a9b3eb34ae\""
+          "value": "\"ac3968d2e2bafac5cfff7b2aa400babbbd8bbf57\""
         },
         {
           "name": "helpcrunch.com-ispaceua-1-visit-start-time",
-          "value": "1737756229554"
+          "value": "1737824100209"
         },
         {
           "name": "helpcrunch.com-ispaceua-1-visit-end-time",
-          "value": "1737758029554"
+          "value": "1737825900209"
         },
         {
           "name": "helpcrunch.com-ispaceua-1-triggers-list",
-          "value": "{\"9\":{\"chat\":\"triggers\",\"agent\":4,\"broadcastId\":9,\"broadcastType\":3,\"broadcastSendingType\":1,\"from\":\"agent\",\"type\":\"message\",\"read\":false,\"sending_status\":{},\"text\":\"MacBook Pro M1 Pro за суперціною 🔥\\nВибір професіоналів, які цінують швидкість та продуктивність.\\n💸 Тільки в iSpace спеціальна ціна на MacBook Pro 16.2\\\" Apple M1 Pro: 75 999 грн замість 135 999 грн!\\nВигода 60 000 грн! 😳😳\\n Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️\\n🌐 Детальніше на сайті iSpace.ua або у магазинах:\\n📍 м. Київ\\n Lavina Mall\\n Retroville\\n Respublika Park\\n River Mall\\n📍 м. Дніпро, пр-т Дмитра Яворницького, 51\\n📍 м. Одеса, вул. Дерибасівська, 27\\n📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)\",\"htmlText\":\"<p>MacBook Pro M1 Pro за суперціною 🔥</p>\\n<p>Вибір професіоналів, які цінують швидкість та продуктивність.<br>&nbsp;<br>💸 Тільки в iSpace спеціальна ціна на <strong>MacBook Pro 16.2\\\" Apple M1 Pro</strong>: <strong>75 999 грн</strong> замість 135 999 грн! <br><strong>Вигода 60 000 грн</strong>! 😳😳</p>\\n<p>&nbsp;Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️</p>\\n<p>🌐 Детальніше на сайті iSpace.ua або у магазинах:<br>📍 м. Київ<br>&nbsp;Lavina Mall<br>&nbsp;Retroville<br>&nbsp;Respublika Park<br>&nbsp;River Mall<br>📍 м. Дніпро, пр-т Дмитра Яворницького, 51<br>📍 м. Одеса, вул. Дерибасівська, 27<br>📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)</p>\",\"createdAt\":\"1737756229.208\"}}"
+          "value": "{\"9\":{\"chat\":\"triggers\",\"agent\":4,\"broadcastId\":9,\"broadcastType\":3,\"broadcastSendingType\":1,\"from\":\"agent\",\"type\":\"message\",\"read\":false,\"sending_status\":{},\"text\":\"MacBook Pro M1 Pro за суперціною 🔥\\nВибір професіоналів, які цінують швидкість та продуктивність.\\n💸 Тільки в iSpace спеціальна ціна на MacBook Pro 16.2\\\" Apple M1 Pro: 75 999 грн замість 135 999 грн!\\nВигода 60 000 грн! 😳😳\\n Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️\\n🌐 Детальніше на сайті iSpace.ua або у магазинах:\\n📍 м. Київ\\n Lavina Mall\\n Retroville\\n Respublika Park\\n River Mall\\n📍 м. Дніпро, пр-т Дмитра Яворницького, 51\\n📍 м. Одеса, вул. Дерибасівська, 27\\n📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)\",\"htmlText\":\"<p>MacBook Pro M1 Pro за суперціною 🔥</p>\\n<p>Вибір професіоналів, які цінують швидкість та продуктивність.<br>&nbsp;<br>💸 Тільки в iSpace спеціальна ціна на <strong>MacBook Pro 16.2\\\" Apple M1 Pro</strong>: <strong>75 999 грн</strong> замість 135 999 грн! <br><strong>Вигода 60 000 грн</strong>! 😳😳</p>\\n<p>&nbsp;Встигніть скористатися унікальною пропозицією, кількість пристроїв обмежена ❗️❗️❗️</p>\\n<p>🌐 Детальніше на сайті iSpace.ua або у магазинах:<br>📍 м. Київ<br>&nbsp;Lavina Mall<br>&nbsp;Retroville<br>&nbsp;Respublika Park<br>&nbsp;River Mall<br>📍 м. Дніпро, пр-т Дмитра Яворницького, 51<br>📍 м. Одеса, вул. Дерибасівська, 27<br>📍 м. Львів, площа Ангелів, 1 (площа Стефана Яворського, 1)</p>\",\"createdAt\":\"1737824100.209\"}}"
         },
         {
           "name": "helpcrunch.com-ispaceua-1-UndeliveredMessages",
