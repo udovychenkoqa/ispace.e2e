@@ -30,6 +30,9 @@ export default defineConfig({
     use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
         baseURL: "https://ispace.ua/ua/",
+        actionTimeout: 25 * 1000,
+        screenshot: "only-on-failure",
+        video: "retain-on-failure",
 
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
         trace: "on-first-retry"
