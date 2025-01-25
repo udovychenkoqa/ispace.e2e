@@ -12,7 +12,7 @@ export class LoginModal extends BaseComponent {
     private root = this.page.locator(".auth-modal-content");
     private submitButton = this.root.locator("button", { hasText: /Продовжити/});
     private loginButton = this.root.locator("button", { hasText: /Увійти/});
-    private signInUsingPasswordButton = this.root.locator("button", { hasText: /Увійти через пошту/ });
+
 
     //Actions
 

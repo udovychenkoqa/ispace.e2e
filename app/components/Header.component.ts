@@ -13,12 +13,18 @@ export class Header extends BaseComponent{
     //Locators
     private root = this.page.locator("header");
     private signInButton = this.root.locator("button.btn.btn-sign-in");
+    private favoriteButton = this.page.locator("button.btn.btn-header-favorite");
     private labelNickname = this.signInButton.locator(".label");
 
     //Actions
     @step("Click SignIn button")
     async clickSignInButton(){
         await this.signInButton.click();
+    }
+
+    @step("Click Favorite button")
+    async clickFavoriteButton(){
+        await this.favoriteButton.click();
     }
 
     //Assert

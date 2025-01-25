@@ -6,6 +6,7 @@ import { step } from "../helpers/step";
 import { API } from "../api";
 import { MacbookAirPage } from "./pages/macbook/MacbookAir.page";
 import { MacPage } from "./pages/macbook/Mac.page";
+import { FavoritePage } from "./pages/account/Favorite.page";
 
 export class App extends PageHolder {
     readonly api = new API(this.page.request);
@@ -14,6 +15,7 @@ export class App extends PageHolder {
     readonly comparePage = new ComparePage(this.page);
     readonly macbookAirPage = new MacbookAirPage(this.page);
     readonly macPage = new MacPage(this.page);
+    readonly favoritePage = new FavoritePage(this.page);
 
     //Actions
     @step("Save storage state of user")
