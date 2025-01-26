@@ -9,6 +9,7 @@ import { MacPage } from "./pages/macbook/Mac.page";
 import { FavoritePage } from "./pages/account/Favorite.page";
 import { CartModal } from "./modals/cart/Cart.modal";
 import { CartPage } from "./pages/cart/Cart.page";
+import { SearchPage } from "./pages/search/Search.page";
 
 export class App extends PageHolder {
     readonly api = new API(this.page.request);
@@ -20,10 +21,12 @@ export class App extends PageHolder {
     readonly macPage = new MacPage(this.page);
     readonly favoritePage = new FavoritePage(this.page);
     readonly cartPage = new CartPage(this.page);
+    readonly searchPage = new SearchPage(this.page);
 
     //Actions
     @step("Save storage state of user")
     async saveStorageStateTo(value: string){
         await this.page.context().storageState({ path: value });
     }
+
 }
