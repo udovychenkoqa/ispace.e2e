@@ -50,7 +50,9 @@ export default defineConfig({
         {
             name: "chromium",
             use: { ...devices["Desktop Chrome"],
-                storageState: "./data/auth/authFile.json"
+                channel: "chromium",
+                storageState: "./data/auth/authFile.json",
+                viewport: { width: 1440, height: 1200 }
             },
             dependencies: ["setup"]
 

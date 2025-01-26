@@ -16,6 +16,13 @@ export class Header extends BaseComponent{
     private favoriteButton = this.page.locator("button.btn.btn-header-favorite");
     private cartButton = this.page.locator("button.btn.btn-header-cart");
     private labelNickname = this.signInButton.locator(".label");
+    private searchButton = this.page.locator("button.btn.btn-header-search");
+
+
+    @step("Header to be loaded")
+    async toBeLoaded(): Promise<void> {
+        await expect(this.root).toBeVisible();
+    }
 
     //Actions
     @step("Click SignIn button")
@@ -31,6 +38,11 @@ export class Header extends BaseComponent{
     @step("Click Cart button")
     async clickCartButton(){
         await this.cartButton.click();
+    }
+
+    @step("Click Search button")
+    async clickSearchButton(){
+        await this.searchButton.click();
     }
 
     //Assert

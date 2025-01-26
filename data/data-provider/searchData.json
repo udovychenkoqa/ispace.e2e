@@ -1,0 +1,27 @@
+{
+    "search": [
+        
+        {
+            "testID": "1",
+            "criteria": "iphone"
+        },
+       
+        {
+            "testID": "2",
+            "criteria": "macbook"
+        },
+        {
+            "testID": "3",
+            "criteria": "ipad"
+        },
+        {
+            "testID": "4",
+            "criteria": "Apple watch"
+        },
+        {
+            "testID": "5",
+            "criteria": "AirPods"
+        }
+    ]
+
+}

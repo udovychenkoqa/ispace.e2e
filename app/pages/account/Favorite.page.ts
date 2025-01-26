@@ -12,12 +12,19 @@ export class FavoritePage extends BasePage {
     public footer = new Footer(this.page);
     public categoryItem = new CategoryItem(this.page);
     //Locators
-    private items = this.page.locator(".catalog-list .catalog-list-item");
+    private root = this.page.locator(".account-favorites .catalog-list");
+    private items = this.root.locator(".catalog-list-item");
+
+    @step("Favorite page loaded")
+    async toBeLoaded(): Promise<void> {
+        await expect(this.root).toBeVisible();
+    }
 
     //Actions
     @step("Open Favorite page")
     async open(){
         await this.page.goto("/account/favorites");
+        await this.toBeLoaded();
     }
 
     //Assert

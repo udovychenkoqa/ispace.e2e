@@ -1,12 +1,12 @@
 import { test } from "../fixtures";
-import { productIds } from "../fixtures";
+import { productIds, favoriteIds } from "../fixtures";
 
 test("Wishlist counter updates after adding a product to favorites", async({ app }) => {
     //Actions
     await app.macPage.open();
     await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
     const id:string = await app.macbookAirPage.catalogItem.addProductToFavoriteAt({ number: 1 });
-    productIds.push(id);
+    favoriteIds.push(id);
 
     //Verify
     await app.macbookAirPage.header.navigation.wishlistButton.expectCounterToHaveText("1");
@@ -17,7 +17,7 @@ test("Favorite page updates after adding a product to favorites", async({ app })
     await app.macPage.open();
     await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
     const id:string = await app.macbookAirPage.catalogItem.addProductToFavoriteAt({ number: 1 });
-    productIds.push(id);
+    favoriteIds.push(id);
     await app.macbookAirPage.header.clickFavoriteButton();
 
     //Verify

@@ -12,12 +12,19 @@ export class CartPage extends BasePage {
     public footer = new Footer(this.page);
     public productItem= new ProductItem(this.page);
     //Locators
-    private items = this.page.locator(".cart-product-list .product-list-item");
+    private root = this.page.locator(".cart-product-list");
+    private items = this.root.locator(".product-list-item");
+
+    @step("Cart page loaded")
+    async toBeLoaded(): Promise<void> {
+        await expect(this.root).toBeVisible();
+    }
 
     //Actions
     @step("Open Cart page")
     async open(){
         await this.page.goto("/cart");
+        await this.toBeLoaded();
     }
 
     //Assert
