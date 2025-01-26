@@ -6,7 +6,7 @@ export class CategoryItem extends BaseComponent {
     private item = (name: string) => this.page.locator(`.category-list [href="/ua/mac/${name}"]`);
 
 
-    async toBeVisible(): Promise<void> {}
+    async toBeLoaded(): Promise<void> {}
 
     //Actions
     @step("Click category item")

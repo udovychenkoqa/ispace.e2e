@@ -8,7 +8,7 @@ export class SearchHelper extends BaseComponent {
     private helperLink = (name: string) => this.root.locator(".helper-link", {hasText: name});
 
     @step(`Search helper to be visible`)
-    async toBeVisible(): Promise<void> {
+    async toBeLoaded(): Promise<void> {
         await expect(this.root).toBeVisible();
     }
 

@@ -3,6 +3,7 @@ import { Header } from "../../components/Header.component";
 import { Footer } from "../../components/Footer.component";
 import { SearchHeader } from "../../components/SearchHeader.component";
 import { step } from "../../../helpers/step";
+import { expect } from "@playwright/test";
 
 export class HomePage extends BasePage {
     public header = new Header(this.page);
@@ -10,12 +11,16 @@ export class HomePage extends BasePage {
     public footer = new Footer(this.page);
 
     //Locators
-    private routerLink = (name: string) => this.page.locator(`[routerlink=${name}]`).first();
+    private root = this.page.locator(".category-panels .container");
+    private routerLink = (name: string) => this.root.locator(`[routerlink=${name}]`).first();
+
+
 
     //Actions
     @step("Open home page")
     async open(){
         await this.page.goto("/");
+        await this.toBeLoaded();
     }
 
     @step("Click router link")
@@ -23,6 +28,11 @@ export class HomePage extends BasePage {
         name: string
     }){
         await this.routerLink(data.name).click();
+    }
+
+    @step("Home page loaded")
+    async toBeLoaded(): Promise<void> {
+        await expect(this.root).toBeVisible();
     }
 
 

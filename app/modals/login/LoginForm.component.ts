@@ -7,7 +7,7 @@ export class LoginForm extends BaseComponent {
 
 
     @step(`Input login to be loaded`)
-    async toBeVisible(): Promise<void> {
+    async toBeLoaded(): Promise<void> {
         await expect(this.inputLogin).toBeVisible();
         await expect(this.inputLogin).not.toHaveJSProperty("naturalWidth", 0);
     }
@@ -15,12 +15,16 @@ export class LoginForm extends BaseComponent {
     //Actions
     @step(`Fill input email field`)
     async fillEmail(email: string):Promise<void>{
-        await this.toBeVisible();
-        await this.inputLogin.fill(email);
+        await this.toBeLoaded();
+        await this.inputLogin.pressSequentially(email, { delay: 100 });
     }
 
     @step(`Clear input login`)
     async clearInputLogin():Promise<void>{
-        await this.inputLogin.clear();
+        await this.toBeLoaded();
+        await this.inputLogin.dblclick();
+        await this.inputLogin.press("Delete");
+        await this.inputLogin.dblclick();
+        await this.inputLogin.press("Delete");
     }
 }

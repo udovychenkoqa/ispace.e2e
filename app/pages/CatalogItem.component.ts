@@ -10,7 +10,7 @@ export class CatalogItem extends BaseComponent {
 
 
     @step("Catalog item to be visible")
-    async toBeVisible(): Promise<void> {
+    async toBeLoaded(): Promise<void> {
         await expect(this.root).toBeVisible();
     }
 

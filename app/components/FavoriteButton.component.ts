@@ -8,8 +8,8 @@ export class FavoriteButton extends BaseComponent {
     private counter = this.page.locator("nav .btn-header-favorite .count");
 
 
-    @step("Header to be visible")
-    async toBeVisible(): Promise<void> {
+    @step("Favorite button to be visible")
+    async toBeLoaded(): Promise<void> {
         await expect(this.counter).toBeVisible();
     }
 

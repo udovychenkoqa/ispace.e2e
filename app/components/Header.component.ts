@@ -18,8 +18,8 @@ export class Header extends BaseComponent{
     private labelNickname = this.signInButton.locator(".label");
 
 
-    @step("Header to be visible")
-    async toBeVisible(): Promise<void> {
+    @step("Header to be loaded")
+    async toBeLoaded(): Promise<void> {
         await expect(this.root).toBeVisible();
     }
 

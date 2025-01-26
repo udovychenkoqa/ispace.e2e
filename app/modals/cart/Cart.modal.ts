@@ -10,7 +10,7 @@ export class CartModal extends BaseComponent {
     private root = this.page.locator(".add-to-cart-modal");
 
     @step(`Cart modal to be visible`)
-    async toBeVisible(): Promise<void> {
+    async toBeLoaded(): Promise<void> {
         await expect(this.root).toBeVisible();
     }
 

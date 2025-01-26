@@ -8,5 +8,5 @@ export class Navigation extends BaseComponent {
     public cartButton = new CartButton(this.page);
     public compareButton = new CompareButton(this.page);
 
-    async toBeVisible(): Promise<void> {}
+    async toBeLoaded(): Promise<void> {}
 }

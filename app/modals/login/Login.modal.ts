@@ -15,7 +15,7 @@ export class LoginModal extends BaseComponent {
     private loginButton = this.root.locator("button", { hasText: /Увійти/});
 
     @step(`Login modal to be visible`)
-    async toBeVisible(): Promise<void> {
+    async toBeLoaded(): Promise<void> {
         await expect(this.root).toBeVisible();
     }
 

@@ -28,7 +28,7 @@ export class ProductItem extends BaseComponent {
     }
 
     @step("Product list to be visible")
-    async toBeVisible(): Promise<void> {
+    async toBeLoaded(): Promise<void> {
         await expect(this.root).toBeVisible();
     }
 
