@@ -17,6 +17,12 @@ export class Header extends BaseComponent{
     private cartButton = this.page.locator("button.btn.btn-header-cart");
     private labelNickname = this.signInButton.locator(".label");
 
+
+    @step("Header to be visible")
+    async toBeVisible(): Promise<void> {
+        await expect(this.root).toBeVisible();
+    }
+
     //Actions
     @step("Click SignIn button")
     async clickSignInButton(){

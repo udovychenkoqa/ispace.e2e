@@ -3,6 +3,7 @@ import { Header } from "../Header.component";
 import { PasswordForm } from "./PasswordForm.component";
 import { LoginForm } from "./LoginForm.component";
 import { step } from "../../../helpers/step";
+import { expect } from "@playwright/test";
 export class LoginModal extends BaseComponent {
     public header = new Header(this.page);
     public passwordForm = new PasswordForm(this.page);
@@ -13,6 +14,10 @@ export class LoginModal extends BaseComponent {
     private submitButton = this.root.locator("button", { hasText: /Продовжити/});
     private loginButton = this.root.locator("button", { hasText: /Увійти/});
 
+    @step(`Login modal to be visible`)
+    async toBeVisible(): Promise<void> {
+        await expect(this.root).toBeVisible();
+    }
 
     //Actions
 

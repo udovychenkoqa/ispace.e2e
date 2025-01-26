@@ -16,4 +16,18 @@ export class UserController extends RequestHolder {
         });
         expect(response.ok()).toBeTruthy();
     }
+
+    async deleteProductFromCart(data: {
+        authToken: string | undefined,
+        cartToken: string | undefined,
+        id: string | undefined
+    }): Promise<void>{
+        const response = await this.request.delete(`https://ispace.ua/ua/api/cart/${data.id}`, {
+            headers: {
+                authorization: `Bearer ${data.authToken}`,
+                carttoken: data.cartToken || ""
+            }
+        });
+        expect(response.ok()).toBeTruthy();
+    }
 }
