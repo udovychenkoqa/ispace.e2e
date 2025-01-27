@@ -1,7 +1,8 @@
 import { test } from "../fixtures";
 import { productIds, favoriteIds } from "../fixtures";
 
-test("Wishlist counter updates after adding a product to favorites", async({ app }) => {
+test("Wishlist counter updates after adding a product to favorites", {
+    tag: ["@favorite", "@ui"] }, async({ app }) => {
     //Actions
     await app.macPage.open();
     await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
@@ -12,7 +13,8 @@ test("Wishlist counter updates after adding a product to favorites", async({ app
     await app.macbookAirPage.header.navigation.wishlistButton.expectCounterToHaveText("1");
 });
 
-test("Favorite page updates after adding a product to favorites", async({ app }) => {
+test("Favorite page updates after adding a product to favorites", {
+    tag: ["@favorite", "@ui"] }, async({ app }) => {
     //Actions
     await app.macPage.open();
     await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
@@ -24,7 +26,8 @@ test("Favorite page updates after adding a product to favorites", async({ app })
     await app.favoritePage.expectCatalogListToHaveCount(1);
 });
 
-test("Cart page updates after adding a product to cart", async({ app }) => {
+test("Cart page updates after adding a product to cart", {
+    tag: ["@cart", "@ui"] }, async({ app }) => {
     //Actions
     await app.macPage.open();
     await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
@@ -36,7 +39,8 @@ test("Cart page updates after adding a product to cart", async({ app }) => {
     await app.cartPage.expectProductListToHaveCount(1);
 });
 
-test("Price changes after clicking a plus button", async({ app }) => {
+test("Price changes after clicking a plus button", {
+    tag: ["@cart", "@ui"] }, async({ app }) => {
     //Actions
     await app.macPage.open();
     await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
@@ -49,7 +53,8 @@ test("Price changes after clicking a plus button", async({ app }) => {
     await app.cartPage.productItem.expectPriceToBeChanged("78 998 грн");
 });
 
-test("Price changes after clicking a minus button", async({ app }) => {
+test("Price changes after clicking a minus button", {
+    tag: ["@cart", "@ui"] }, async({ app }) => {
     //Actions
     await app.macPage.open();
     await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });

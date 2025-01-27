@@ -1,9 +1,9 @@
-import { test as baseTest } from "@playwright/test";
+import { test as baseTest, ConsoleMessage } from "@playwright/test";
 import { App } from "../app/index";
 export const favoriteIds: Array<string> = [];
 export const productIds: Array<string> = [];
 
-export const test = baseTest.extend<{ app: App }>({
+export const test = baseTest.extend<{ app: App}>({
     app: async ( { page }, use) => {
         const app = new App(page);
         await use(app);
@@ -25,5 +25,14 @@ export const test = baseTest.extend<{ app: App }>({
                 });
             }
         }
+    },
+    page: async ({ page}, use) => {
+        page.on("console", async (msg:ConsoleMessage ) => {
+            if(msg.text().includes("the server responded with a status of 500")){
+                throw new Error(`on a page ${
+                    page.url()} error was throws in a console with a error message: ${msg.text()}`);
+            }
+        });
+        await use(page);
     }
 });
