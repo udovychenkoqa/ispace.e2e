@@ -1,7 +1,5 @@
 import { test as setup } from "../fixtures/index";
 import { getAuthTokenFromAuthFile, getCartTokenFromAuthFile } from "../helpers/authHelper";
-setup.use({viewport: { width: 1440, height: 1200 }});
-
 
 setup("Login to site as user", async ({ app }) => {
     //Action
