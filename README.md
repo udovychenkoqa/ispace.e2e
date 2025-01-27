@@ -75,7 +75,7 @@ Each call to the decorated method will show up as a step in the report.
 5. **Run Tests**
    Execute the test suite using:
    ```bash
-   npm run test
+   npx playwright test
    ```
 
 
