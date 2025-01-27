@@ -1,0 +1,27 @@
+{
+    "filters": [
+        
+        {
+            "testID": "1",
+            "value": "Apple M1",
+            "category": " Процесор "
+        },
+       
+        {
+            "testID": "2",
+            "value": "256 ГБ",
+            "category": " Ємність пристрою пам'яті "
+        },
+        {
+            "testID": "3",
+            "value": "8 ГБ",
+            "category": " Ємність встановленого ОЗП  "
+        },
+        {
+            "testID": "4",
+            "value": "15",
+            "category": "Розмір MacBook"
+        }
+    ]
+
+}

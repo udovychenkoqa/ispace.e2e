@@ -45,7 +45,10 @@ export default defineConfig({
     projects: [
         {
             name: "setup",
-            testMatch: /global\.setup\.ts/
+            testMatch: /global\.setup\.ts/,
+            use: {
+                viewport: { width: 1440, height: 1200 }
+            }
         },
         {
             name: "chromium",
