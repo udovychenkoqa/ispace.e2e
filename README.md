@@ -28,7 +28,7 @@ Parameterize tests are used to run the same test logic multiple times with diffe
 #### [POM](https://playwright.dev/docs/pom)
 Page objects simplify authoring by creating a higher-level API which suits app and simplify maintenance by capturing element selectors in one place and create reusable code to avoid repetition.
 
-#### [Compositions for working with complex Page objects]
+#### Compositions for working with complex Page objects
 
 #### [globalSetup](https://playwright.dev/docs/test-global-setup-teardown#option-2-configure-globalsetup-and-globalteardown)
 Global setup in my project authenticates once and reuses authentication state in tests.
