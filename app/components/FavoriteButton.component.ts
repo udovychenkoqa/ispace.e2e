@@ -16,6 +16,6 @@ export class FavoriteButton extends BaseComponent {
     //Assert
     @step("Counter to Have Text")
     async expectCounterToHaveText(value: string){
-        expect(this.counter).toHaveText(value);
+        await expect(this.counter).toHaveText(value);
     }
 }
