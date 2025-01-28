@@ -1,5 +1,5 @@
 
-# End-to-End Tests for iSpace Website (TS + Playwright)
+# End-to-End tests for iSpace website (TS + Playwright)
 
 <details open="open">
 <summary>Table of Contents</summary>
