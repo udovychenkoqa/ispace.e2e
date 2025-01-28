@@ -30,6 +30,9 @@ Page objects simplify authoring by creating a higher-level API which suits app a
 
 #### Compositions for working with complex Page objects
 
+#### (Parallel tests --workers=4)[https://playwright.dev/docs/test-parallel]
+
+
 #### [globalSetup](https://playwright.dev/docs/test-global-setup-teardown#option-2-configure-globalsetup-and-globalteardown)
 Global setup in my project authenticates once and reuses authentication state in tests.
 

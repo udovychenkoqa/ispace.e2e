@@ -1,8 +1,10 @@
+import { step } from "../../helpers/step";
 import { RequestHolder } from "../base/RequestHolder.abstract";
 import { expect } from "@playwright/test";
 
 export class UserController extends RequestHolder {
 
+    @step("Send Delete request favorites?product_id")
     async deleteFavoriteProduct(data: {
         authToken: string | undefined,
         cartToken: string | undefined,
@@ -17,6 +19,7 @@ export class UserController extends RequestHolder {
         expect(response.ok()).toBeTruthy();
     }
 
+    @step("Send Delete request for cart_product_id")
     async deleteProductFromCart(data: {
         authToken: string | undefined,
         cartToken: string | undefined,
