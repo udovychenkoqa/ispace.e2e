@@ -7,10 +7,10 @@ import { step } from "../../../helpers/step";
 import { expect } from "@playwright/test";
 
 export class MacPage extends BasePage {
-    public header = new Header(this.page);
-    public searchHeader = new SearchHeader(this.page);
-    public footer = new Footer(this.page);
-    public categoryItem = new CategoryItem(this.page);
+    readonly header = new Header(this.page);
+    readonly searchHeader = new SearchHeader(this.page);
+    readonly footer = new Footer(this.page);
+    readonly categoryItem = new CategoryItem(this.page);
 
     //Locators
     private root = this.page.locator(".row .category-list");

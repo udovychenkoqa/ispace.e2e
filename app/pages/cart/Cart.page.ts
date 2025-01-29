@@ -7,10 +7,10 @@ import { expect } from "@playwright/test";
 import { ProductItem } from "./ProductItem.component";
 
 export class CartPage extends BasePage {
-    public header = new Header(this.page);
-    public searchHeader = new SearchHeader(this.page);
-    public footer = new Footer(this.page);
-    public productItem= new ProductItem(this.page);
+    readonly header = new Header(this.page);
+    readonly searchHeader = new SearchHeader(this.page);
+    readonly footer = new Footer(this.page);
+    readonly productItem= new ProductItem(this.page);
     //Locators
     private root = this.page.locator(".cart-product-list");
     private items = this.root.locator(".product-list-item");

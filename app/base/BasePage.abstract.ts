@@ -5,14 +5,14 @@ import { step } from "../../helpers/step";
 export abstract class BasePage extends BaseComponent {
 
     //Actions
-    public abstract open(path?: string): Promise<void>;
+    protected abstract open(path?: string): Promise<void>;
 
     @step("Refresh current page")
     public async refresh(){
         await this.page.reload();
     }
     @step("Navigate to previous page")
-    async navigateBack(): Promise<void>{
+    public async navigateBack(): Promise<void>{
         await this.page.goBack();
     }
 
@@ -23,7 +23,7 @@ export abstract class BasePage extends BaseComponent {
     }
 
     @step("Page to have url")
-    async expectUrlCurrentPage(url: string): Promise<void>{
+    public async expectUrlCurrentPage(url: string): Promise<void>{
         await expect(this.page).toHaveURL(url);
     }
 

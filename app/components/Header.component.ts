@@ -6,9 +6,9 @@ import { expect } from "@playwright/test";
 import { Navigation } from "./Navigation.component";
 
 export class Header extends BaseComponent{
-    public search = new SearchForm(this.page);
-    public matMenu = new MatMenu(this.page);
-    public navigation = new Navigation(this.page);
+    readonly search = new SearchForm(this.page);
+    readonly matMenu = new MatMenu(this.page);
+    readonly navigation = new Navigation(this.page);
 
     //Locators
     private root = this.page.locator("header");

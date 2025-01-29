@@ -9,12 +9,12 @@ import { Filter } from "../Filter.component";
 import { CatalogHeader } from "../CatalogHeader.component";
 
 export class MacbookAirPage extends BasePage {
-    public header = new Header(this.page);
-    public searchHeader = new SearchHeader(this.page);
-    public footer = new Footer(this.page);
-    public catalogItem = new CatalogItem(this.page);
-    public filter = new Filter(this.page);
-    public catalogHeader = new CatalogHeader(this.page);
+    readonly header = new Header(this.page);
+    readonly searchHeader = new SearchHeader(this.page);
+    readonly footer = new Footer(this.page);
+    readonly catalogItem = new CatalogItem(this.page);
+    readonly filter = new Filter(this.page);
+    readonly catalogHeader = new CatalogHeader(this.page);
 
     //Locators
     private root = this.page.locator(".catalog-subcategory .catalog-list");

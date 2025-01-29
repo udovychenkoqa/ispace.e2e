@@ -3,9 +3,9 @@ import { PageHolder } from "./PageHolder.abstract";
 
 export abstract class BaseComponent extends PageHolder {
 
-    public abstract toBeLoaded(): Promise<void>;
+    protected abstract toBeLoaded(): Promise<void>;
 
-    public async getResponseAfterClick(data:{ containUrl: string, element: Locator}){
+    protected async getResponseAfterClick(data:{ containUrl: string, element: Locator}){
         const responsePromise = this.page.waitForResponse((response) =>
             response.url().includes(data.containUrl)
         );

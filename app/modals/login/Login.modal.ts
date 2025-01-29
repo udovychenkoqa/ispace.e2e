@@ -5,9 +5,9 @@ import { LoginForm } from "./LoginForm.component";
 import { step } from "../../../helpers/step";
 import { expect } from "@playwright/test";
 export class LoginModal extends BaseComponent {
-    public header = new Header(this.page);
-    public passwordForm = new PasswordForm(this.page);
-    public loginForm = new LoginForm(this.page);
+    readonly header = new Header(this.page);
+    readonly passwordForm = new PasswordForm(this.page);
+    readonly loginForm = new LoginForm(this.page);
 
     //locators
     private root = this.page.locator(".auth-modal-content");

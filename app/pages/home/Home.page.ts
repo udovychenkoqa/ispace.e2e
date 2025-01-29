@@ -6,9 +6,9 @@ import { step } from "../../../helpers/step";
 import { expect } from "@playwright/test";
 
 export class HomePage extends BasePage {
-    public header = new Header(this.page);
-    public searchHeader = new SearchHeader(this.page);
-    public footer = new Footer(this.page);
+    readonly header = new Header(this.page);
+    readonly searchHeader = new SearchHeader(this.page);
+    readonly footer = new Footer(this.page);
 
     //Locators
     private root = this.page.locator(".category-panels .container");
