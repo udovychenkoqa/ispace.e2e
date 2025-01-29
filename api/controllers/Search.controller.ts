@@ -9,7 +9,7 @@ export class SearchController extends RequestHolder {
     @step("Send GET request for search query")
     async getSearchRequest(data:{ query: string }) {
         const response = await this.request.get(
-            `https://ispace.ua/api/v1/search?site=19&query=${data.query}`
+            `/api/v1/search?site=19&query=${data.query}`
         );
         const parseBody = response.json();
         return parseBody as Promise<SearchResponse>;

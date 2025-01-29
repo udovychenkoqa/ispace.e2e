@@ -12,7 +12,6 @@ import { defineConfig, devices } from "@playwright/test";
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-    testDir: "./tests",
     /* Run tests in files in parallel */
     fullyParallel: true,
     timeout: 5 * 60 * 1000,
@@ -52,7 +51,9 @@ export default defineConfig({
             }
         },
         {
-            name: "chromium",
+            name: "iSpace",
+            testDir: "./tests",
+            testMatch: "**.spec.**",
             use: { ...devices["Desktop Chrome"],
                 channel: "chromium",
                 storageState: "./data/auth/authFile.json",
@@ -60,12 +61,15 @@ export default defineConfig({
             },
             dependencies: ["setup"]
 
+        },
+        {
+            name: "iSpace-api",
+            testDir: "./tests",
+            testMatch: "**.api.**",
+            use: {
+                baseURL: "https://ispace.ua"
+            }
         }
-
-        // {
-        //   name: 'firefox',
-        //   use: { ...devices['Desktop Firefox'] },
-        // },
 
         // {
         //   name: 'webkit',

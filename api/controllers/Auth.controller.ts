@@ -4,7 +4,7 @@ import { LoginRequest } from "../models/LoginRequest.model";
 export class AuthController extends RequestHolder {
     async getTokenFromResponse(data: LoginRequest) {
         const response = await this.request.post(
-            "https://ispace.ua/ua/api/apr/login",
+            "/apr/login",
             {
                 data: data
             }

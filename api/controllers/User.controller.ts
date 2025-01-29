@@ -10,7 +10,7 @@ export class UserController extends RequestHolder {
         cartToken: string | undefined,
         id: string | undefined
     }): Promise<void>{
-        const response = await this.request.delete(`https://ispace.ua/ua/api/apr/favorites?product_id=${data.id}`, {
+        const response = await this.request.delete(`/ua/api/apr/favorites?product_id=${data.id}`, {
             headers: {
                 authorization: `Bearer ${data.authToken}`,
                 carttoken: data.cartToken || ""
@@ -25,7 +25,7 @@ export class UserController extends RequestHolder {
         cartToken: string | undefined,
         id: string | undefined
     }): Promise<void>{
-        const response = await this.request.delete(`https://ispace.ua/ua/api/cart/${data.id}`, {
+        const response = await this.request.delete(`/ua/api/cart/${data.id}`, {
             headers: {
                 authorization: `Bearer ${data.authToken}`,
                 carttoken: data.cartToken || ""
