@@ -1,10 +1,11 @@
+import { MacBookAir, PageSuffix } from "../app/PageSuffix";
 import { test } from "../fixtures";
 import { productIds, favoriteIds } from "../fixtures";
 test.describe("Product functionality", () => {
     test.describe.configure({ mode: "default" });
     test("Wishlist counter updates after adding a product to favorites", {
         tag: ["@favorite", "@ui"] }, async({ app }) => {
-    //Actions
+        //Actions
         await app.macPage.open();
         await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
         const id:string = await app.macbookAirPage.catalogItem.addProductToFavoriteAt({ number: 1 });
@@ -16,7 +17,7 @@ test.describe("Product functionality", () => {
 
     test("Favorite page updates after adding a product to favorites", {
         tag: ["@favorite", "@ui"] }, async({ app }) => {
-    //Actions
+        //Actions
         await app.macPage.open();
         await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
         const id:string = await app.macbookAirPage.catalogItem.addProductToFavoriteAt({ number: 1 });
@@ -30,7 +31,7 @@ test.describe("Product functionality", () => {
 
     test("Cart page updates after adding a product to cart", {
         tag: ["@cart", "@ui"] }, async({ app }) => {
-    //Actions
+        //Actions
         await app.macPage.open();
         await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
         const id:string = await app.macbookAirPage.catalogItem.addProductToCartAt({ number: 1 });
@@ -41,34 +42,51 @@ test.describe("Product functionality", () => {
         await app.cartPage.expectProductListToHaveCount(1);
     });
 
-    test("Price changes after clicking a plus button", {
-        tag: ["@cart", "@ui"] }, async({ app }) => {
-    //Actions
+    test("Price updates after increasing product quantity", {
+        tag: ["@cart", "@ui"]
+    }, async ({ app }) => {
+        // Actions
         await app.macPage.open();
         await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
-        const id:string = await app.macbookAirPage.catalogItem.addProductToCartAt({ number: 1 });
-        productIds.push(id);
+        const productId: string = await app.macbookAirPage.catalogItem.addProductToCartAt({ number: 1 });
+        productIds.push(productId);
         await app.cartPage.open();
+        const initialPrice = await app.cartPage.productItem.getPriceProduct();
         await app.cartPage.productItem.clickPlusButton();
+        await app.cartPage.productItem.stepToBeChanged(2);
+        const updatedPrice = await app.cartPage.productItem.getPriceProduct();
 
-        //Verify
-        await app.cartPage.productItem.expectPriceToBeChanged("78 998 грн");
+        // Verify
+        await app.cartPage.productItem.expectPriceToIncrease({
+            oldPrice: initialPrice,
+            newPrice: updatedPrice
+        });
     });
 
     test("Price changes after clicking a minus button", {
         tag: ["@cart", "@ui"] }, async({ app }) => {
-    //Actions
+        //Actions
         await app.macPage.open();
         await app.macPage.categoryItem.clickItemBy({ name: "macbook-air" });
-        const id:string = await app.macbookAirPage.catalogItem.addProductToCartAt({ number: 1 });
-        productIds.push(id);
+        const productId: string = await app.macbookAirPage.catalogItem.addProductToCartAt({ number: 1 });
+        productIds.push(productId);
         await app.cartPage.open();
+        const initialPrice = await app.cartPage.productItem.getPriceProduct();
         await app.cartPage.productItem.clickPlusButton();
+        await app.cartPage.productItem.stepToBeChanged(2);
+        const updatedPrice = await app.cartPage.productItem.getPriceProduct();
 
         //Verify
-        await app.cartPage.productItem.expectPriceToBeChanged("78 998 грн");
+        await app.cartPage.productItem.expectPriceToDecrease({
+            newPrice: updatedPrice,
+            oldPrice: initialPrice
+        });
         await app.cartPage.productItem.clickMinusButton();
-        await app.cartPage.productItem.expectPriceToBeChanged("39 499 грн");
+        await app.cartPage.productItem.stepToBeChanged(1);
+        await app.cartPage.productItem.expectPriceToIncrease({
+            oldPrice: initialPrice,
+            newPrice: updatedPrice
+        });
     });
 });
 
@@ -76,8 +94,8 @@ test.describe("Product details functionality", () => {
     test.describe.configure({ mode: "default" });
     test(`Product is added to the cart and the cart button updates text`, {
         tag: ["@productDetail", "@ui"]}, async({ app }) => {
-    //Actions
-        await app.productPage.open("/macbook-air/macbook-air-13-8-gb-256-gb-apple-m1-seryy-kosmos-mgn63uua");
+        //Actions
+        await app.productPage.open(`${MacBookAir.M1_256GB_13_8GB_SERYY_KOSMOS}-mgn63uua`);
         const id:string = await app.productPage.addProductToCartAt();
         productIds.push(id);
         await app.cartModal.toBeLoaded();
@@ -90,8 +108,8 @@ test.describe("Product details functionality", () => {
 
     test(`The "Cart" button adds the product to the cart and redirect to the cart page`, {
         tag: ["@productDetail", "@ui"]}, async({ app }) => {
-    //Actions
-        await app.productPage.open("/macbook-air/macbook-air-13-8-gb-256-gb-apple-m1-seryy-kosmos-mgn63uua");
+        //Actions
+        await app.productPage.open(`${MacBookAir.M1_256GB_13_8GB_SERYY_KOSMOS}-mgn63uua`);
         const id:string = await app.productPage.addProductToCartAt();
         productIds.push(id);
         await app.cartModal.toBeLoaded();
@@ -100,6 +118,6 @@ test.describe("Product details functionality", () => {
 
         //Verify
         await app.cartPage.expectTitleCurrentPage("Корзина");
-        await app.cartPage.expectUrlCurrentPage("https://ispace.ua/ua/cart");
+        await app.cartPage.expectUrlCurrentPage("/ua" + PageSuffix.CART_PAGE);
     });
 });

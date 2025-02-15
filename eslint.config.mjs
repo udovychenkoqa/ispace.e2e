@@ -10,7 +10,7 @@ export default [
         ignores: ["**/step.ts", "**/node_modules/**", "/playwright-report/**"],
         rules: {
             // enforces a maximum line length to increase code readability and maintainability
-            "max-len": ["warn", { "code": 120, "ignoreUrls": true, "ignoreRegExpLiterals": true }],
+            "max-len": ["warn", { "code": 140, "ignoreUrls": true, "ignoreRegExpLiterals": true }],
             // enforces a consistent indentation style
             "indent": ["error", 4],
             // enforces consistent use of semicolons
