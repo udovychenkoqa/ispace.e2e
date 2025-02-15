@@ -1,5 +1,5 @@
-import { test } from "../fixtures";
-import filterData from "../data/data-provider/filterData.json";
+import { test } from "../../fixtures";
+import filterData from "../filter/test-data/filterData.json";
 
 for(const { testID, value, category } of filterData.filters){
     test(`${testID} Results match the filter: ${category} - ${value}`, {

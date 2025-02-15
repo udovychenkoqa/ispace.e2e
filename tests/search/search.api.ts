@@ -1,4 +1,4 @@
-import { test } from "../fixtures";
+import { test } from "../../fixtures";
 
 test(`Response match the search criteria`, {
     tag: ["@search", "@api"]}, async({ app }) => {
