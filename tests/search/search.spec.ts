@@ -1,5 +1,5 @@
-import { test } from "../fixtures";
-import searchData from "../data/data-provider/searchData.json";
+import { test } from "../../fixtures";
+import searchData from "../search/test-data/searchData.json";
 
 for(const { testID, criteria } of searchData.search){
     test(`${testID} Search results match the search criteria: ${criteria}`, {

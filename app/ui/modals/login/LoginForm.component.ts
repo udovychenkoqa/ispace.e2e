@@ -16,6 +16,7 @@ export class LoginForm extends BaseComponent {
     @step(`Fill input email field`)
     async fillEmail(email: string):Promise<void>{
         await this.toBeLoaded();
+        await this.inputLogin.click();
         await this.inputLogin.pressSequentially(email, { delay: 100 });
     }
 
