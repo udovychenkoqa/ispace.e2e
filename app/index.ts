@@ -1,16 +1,16 @@
-import { PageHolder } from "./base/PageHolder.abstract";
-import { HomePage } from "./pages/home/Home.page";
-import { LoginModal } from "./modals/login/Login.modal";
-import { ComparePage } from "./pages/compare/Compare.page";
+import { HomePage } from "./ui/pages/home/Home.page";
+import { LoginModal } from "./ui/modals/login/Login.modal";
+import { ComparePage } from "./ui/pages/compare/Compare.page";
 import { step } from "../helpers/step";
-import { API } from "../api";
-import { MacbookAirPage } from "./pages/macbook/MacbookAir.page";
-import { MacPage } from "./pages/macbook/Mac.page";
-import { FavoritePage } from "./pages/account/Favorite.page";
-import { CartModal } from "./modals/cart/Cart.modal";
-import { CartPage } from "./pages/cart/Cart.page";
-import { SearchPage } from "./pages/search/Search.page";
-import { ProductPage } from "./pages/macbook/Product.page";
+import { API } from "../app/api/index";
+import { MacbookAirPage } from "./ui/pages/macbook/MacbookAir.page";
+import { MacPage } from "./ui/pages/macbook/Mac.page";
+import { FavoritePage } from "./ui/pages/account/Favorite.page";
+import { CartModal } from "./ui/modals/cart/Cart.modal";
+import { CartPage } from "./ui/pages/cart/Cart.page";
+import { SearchPage } from "./ui/pages/search/Search.page";
+import { ProductPage } from "./ui/pages/macbook/Product.page";
+import { PageHolder } from "./ui/base/PageHolder.abstract";
 
 export class App extends PageHolder {
     readonly api = new API(this.page.request);
