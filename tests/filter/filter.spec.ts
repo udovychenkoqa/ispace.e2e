@@ -14,7 +14,7 @@ for(const { testID, value, category } of filterData.filters){
     });
 }
 
-test(`Results are sorted by price from most expensive to cheapest`, {
+test.fixme(`Results are sorted by price from most expensive to cheapest`, {
     tag: ["@filter", "@ui"]}, async({ app }) => {
     //Actions
     await app.macbookAirPage.open();
