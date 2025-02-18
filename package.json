@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-       "prod": "npx playwright test -g '@api",
-       "dev": "npx playwright test -g '@ui'"
+       "api": "npx playwright test -g '@api",
+       "ui": "npx playwright test -g '@ui'"
   },
   "keywords": [],
   "author": "",
