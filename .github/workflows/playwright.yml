@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       runs:
-        description: "Choose an env that you want to execute"
+        description: "Choose an tests that you want to run"
         required: true
         default: "ui"
         type: choice
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      RUN: dev
+      RUN: ui
 
     steps:
       - uses: actions/checkout@v4
@@ -38,7 +38,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
-        run: npm run $ENVIRONMENT
+        run: npm run $RUN
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
