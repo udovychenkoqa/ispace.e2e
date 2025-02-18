@@ -9,11 +9,7 @@ on:
         type: choice
         options:
           - ui
-          - api
-
-  pull_request:
-    branches: [main]         
-
+          - api 
 jobs:
   test:
     timeout-minutes: 60
@@ -31,14 +27,14 @@ jobs:
         run: npm ci
       - name: Set env variable
         run: |
-          if [ -n "${{ inputs.runs }}" ]; then 
-          echo "Setting projects from github.event.inputs.runs"
-          echo "RUN=${{ inputs.runs }}" >> $GITHUB_ENV
+          if [[ -n "${{ inputs.runs }}" ]]; then 
+            echo "Setting RUN=${{ inputs.runs }}"
+            echo "RUN=${{ inputs.runs }}" >> $GITHUB_ENV
           fi
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
-        run: npm run $RUN
+        run: npm run ${{ env.RUN }}
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
