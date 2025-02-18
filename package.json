@@ -2,7 +2,10 @@
   "name": "ispace.e2e",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+       "prod": "npx playwright test -g '@api",
+       "dev": "npx playwright test -g '@ui'"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
